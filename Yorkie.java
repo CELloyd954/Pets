@@ -19,4 +19,8 @@ public class Yorkie extends Pet {
 		}
 	}
 
+	public String talk() {
+		return isHappy() ? "BARK!" : "Grrrr";
+	}
+
 }
