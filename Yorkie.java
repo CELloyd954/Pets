@@ -1,13 +1,13 @@
 public class Yorkie extends Pet {
 
-	private timesPet = 0;
+	private int timesPet = 0;
 
-	public class Yorkie(String name) {
+	public Yorkie(String name) {
 		super(name);
 	}
 
-	public int getTimes() {
-		super.Pet();
+	public void pets() {
+		super.pets();
 		timesPet++;
 	}
 

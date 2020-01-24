@@ -3,10 +3,12 @@ public class TesterPet {
 		
 		Dog d = new Dog("Rex");
 		Cat c = new Cat("Zuri");
+		Yorkie y = new Yorkie("Frankie");
 		
-		Pet[] pets = new Pet[2];
+		Pet[] pets = new Pet[3];
 		pets[0] = d;
 		pets[1] = c;
+		pets[2] = y;
 		PetOwner po = new PetOwner(pets, "Cayden");
 
 		// System.out.println("Dog says " + rex.isHappy());
