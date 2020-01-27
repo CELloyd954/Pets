@@ -15,16 +15,26 @@ public class PetOwner {
 	public boolean isHappy() {
 		
 		boolean happy = true;
+		int count = 0;
 
 		for (int i = 0; i < pets.length; i++) {
 			
-			if (!(pets[i].isHappy())) {
-				return false;
+			if ((pets[i].isHappy())) {
+				count++;
 			} else {
-				return true;
+				count = count;
 			}
 
 		}
+		if (count == pets.length) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public String talk() {
+		return isHappy() ? "HAPPY" : "NOT HAPPY";
 	}
 
 }

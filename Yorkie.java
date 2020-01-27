@@ -6,8 +6,8 @@ public class Yorkie extends Pet {
 		super(name);
 	}
 
-	public void pets() {
-		super.pets();
+	public void pet() {
+		super.pet();
 		timesPet++;
 	}
 

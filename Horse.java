@@ -9,7 +9,7 @@ public class Horse extends Pet {
 	}
 
 	public String talk() {
-		return isHappy() ? "Nayyyyy :)" : "nay :(";
+		return isHappy() ? "Neigh :)" : "nay :(";
 	}
 
 }
