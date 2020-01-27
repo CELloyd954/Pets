@@ -5,7 +5,7 @@ public class Cat extends Pet {
 	}
 
 	public boolean isHappy() {
-		return fed && !(walked || petted);
+		return this.getFed() && !(this.getWalked() || this.getPetted());
 	}
 
 	public String talk() {
