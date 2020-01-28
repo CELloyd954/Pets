@@ -1,12 +1,18 @@
-public class TalkingCat extends Cat{
+public class TalkingCat extends Pet{
     
-    public String catTalking(){
-        if(isHappy() = true){
-            return response;
-        }else{
-            return str;
-        }
+    private boolean toldToSpeak;
+
+    public TalkingCat(String name) {
+    	super(name);
     }
+
+    public void speak() {
+    	this.toldToSpeak = true;
+    }
+
+    public boolean isHappy() {
+		return this.getFed() && !(this.getWalked() || this.getPetted());
+	}
 
     private String getRandomHappy() {
 		final int happyResponse = 4;
@@ -23,6 +29,7 @@ public class TalkingCat extends Cat{
 		} else if (whichResponse == 3) {
 			response = "I love you human!";
 		}
+		return response;
 
 	}
 
@@ -44,4 +51,13 @@ public class TalkingCat extends Cat{
 
 		return str;
 	}
+
+	    public String catTalking(){
+        if (isHappy() && toldToSpeak){
+            return this.getRandomHappy();
+        } else{
+            return this.getRandomAngry();
+        }
+    }
+
 }
